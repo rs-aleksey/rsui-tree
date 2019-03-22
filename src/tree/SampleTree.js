@@ -38,7 +38,7 @@ const treeData = [
                             name: 'SEGMENT',
                             children: [
                               {
-                                type: NODE_TYPE_SEGMENT_OPENED,
+                                type: NODE_TYPE_SEGMENT_CLOSED,
                                 name: 'SEGMENT',
                                 children: [
                                   undefined,

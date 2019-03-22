@@ -12,6 +12,7 @@ import TreeLayoutNodeTwoColumnsContainer from './layout/TreeLayoutNodeTwoColumns
 import TreeLayoutNodeTwoColumnsColumn from './layout/TreeLayoutNodeTwoColumnsColumn';
 import TreeLayoutNodeSingleColumn from './layout/TreeLayoutNodeSingleColumn';
 import TreeLayoutNodeExit from './layout/TreeLayoutNodeExit';
+import TreeLayoutVerticalLine from './layout/TreeLayoutVerticalLine';
 
 export default class TreeNodes extends Component {
   get isOneColumn() {
@@ -64,7 +65,13 @@ export default class TreeNodes extends Component {
         if (this.isTwoColumns) {
           return (
             <TreeLayoutNodeTwoColumnsColumn>
-              <TreeLayoutNodeExit />
+              {this.shouldRenderExit
+              ? (
+                <TreeLayoutNodeExit />
+              )
+              : (
+                <TreeLayoutVerticalLine />
+              )}
             </TreeLayoutNodeTwoColumnsColumn>
           );
         }

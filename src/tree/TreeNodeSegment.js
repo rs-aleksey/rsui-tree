@@ -25,7 +25,7 @@ export default class TreeNodeSegment extends Component {
   get hasChildren() {
     const { node: { children } } = this.props;
 
-    if (children && children[0] && children[1]) {
+    if (children && (children[0] || children[1])) {
       return true;
     }
 
