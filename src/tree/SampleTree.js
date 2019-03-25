@@ -64,6 +64,14 @@ const treeData = [
                                       },
                                     ],
                                   },
+                                  {
+                                    type: NODE_TYPE_SEGMENT_OPENED,
+                                    name: 'SEGMENT',
+                                    children: [
+                                      undefined,
+                                      undefined,
+                                    ],
+                                  },
                                 ],
                               },
                               {
